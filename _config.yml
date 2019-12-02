@@ -1,11 +1,10 @@
 # 1. metadata
-title: Katherine Donnally Designs
+title: Sudoku by Katherine
 baseurl: ""
 url: "http://katherinedoes.design" # the base hostname & protocol for your site, e.g. http://example.com
 
 description: >- 
-  Design website for portfolio & freelance signups.
-  Documentation found on `katherinedoes.docs` repo.
+  Interactive online Sudoku puzzle game.
 
 # 2. build settings
 incremental: true
