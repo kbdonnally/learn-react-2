@@ -3,14 +3,15 @@
 // --------- Title: -----------------
 
 .sudoku-title {
-
+	text-align: center;
 }
 
 // --------- Game Shape: -------------
 
 // wrapper for whole game
 .sudoku-game-wrapper {
-
+	margin: 0 auto;
+	padding: 3rem 0;
 }
 
 // game-size square
