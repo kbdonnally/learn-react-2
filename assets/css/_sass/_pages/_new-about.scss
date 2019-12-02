@@ -1,0 +1,180 @@
+// New About: //
+
+.na__nav {
+	height: 3rem;
+	width: 100%;
+	background-color: $mypurple;
+}
+
+// Title //
+
+.na__title {
+
+}
+
+.na-title__text {
+	margin: .25em auto;
+	margin-top: .5em;
+	font-family: $futura-bold;
+	font-size: 3rem;
+	text-align: center;
+	border-bottom-width: 0px;
+	@media screen and (min-width: 768px) {
+		font-size: 4rem;
+	}
+	@media screen and (min-width: 900px) {
+		margin: .25em auto;
+		font-size: 4.5rem;
+	}
+	@media screen and (min-width: 1440px) {
+		font-size: 5rem;
+	}
+}
+
+[class*="na-title__line--"] {
+	height: 2px;
+	margin: calc(1.5rem - 1px) auto;
+	background-color: $mypurple;
+	@media screen and (max-width: 425px) {
+		margin: calc(1rem - 1px) auto;
+	}
+}
+
+.na-title__line--long {
+	width: 83.33%;
+}
+
+.na-title__line--med {
+	width: 75%;
+}
+
+.na-title__line--short {
+	width: 66.67%;
+}
+
+// Bio //
+
+.na__bio {
+	width: 83.33%;
+	margin: 0 auto;
+	@media screen and (max-width: 425px) {
+		width: 91.67%;
+	}
+	@media screen and (min-width: 1440px) {
+	//	max-width: 75%;
+	}
+}
+
+.na-bio__title, .na-contact__title {
+	margin: .25em 0;
+	font-family: $futura-bold;
+	font-size: 3rem;
+	text-transform: uppercase;
+	@media screen and (max-width: 425px) {
+		font-size: 2.25rem;
+	}
+	@media screen and (min-width: 1440px) {
+		font-size: 3.5rem;
+	}
+}
+
+.na-bio__text {
+	p {
+		font-family: $source-sans;
+		font-size: 1.25rem;
+		line-height: 1.4;
+	}
+	@media screen and (max-width: 425px) {
+		p {
+			font-size: 18px;
+		}
+	}
+	@media screen and (min-width: 1440px) {
+		p {
+			font-size: 24px;
+		}
+	}
+}
+
+// Contact //
+
+.na__contact {
+	width: 83.33%;
+	margin: 0 auto;
+	margin-bottom: 1.5rem;
+	@media screen and (max-width: 425px) {
+		width: 91.67%;
+	}
+	@media screen and (min-width: 1440px) {
+	//	max-width: 75%;
+	}
+}
+
+.na-contact__title {
+// covered above
+}
+
+.na-contact__content {
+
+}
+
+// ul
+.na-contact__row {
+	position: relative;
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.na-contact__svg {
+	display: flex;
+	align-items: center;
+	padding-right: 1.5rem;
+	img {
+		height: 2rem;
+	}
+	@media screen and (min-width: 1440px) {
+		img {
+			height: 39px;
+		}
+	}
+}
+
+.na-contact__type {
+	width: 5.5rem;
+	font-family: $source-sans;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1.4;
+	@media screen and (max-width: 425px) {
+		width: 5rem;
+		font-size: 18px;
+	}
+	@media screen and (min-width: 1440px) {
+		width: 6.5rem;
+		font-size: 24px;
+	}
+}
+
+.na-contact__user {
+	font-family: $source-sans;
+	font-size: 20px;
+	line-height: 1.4;
+	a {
+		font-weight: 400;
+		color: black;
+		border-bottom: 2px solid $mypurple;
+		transition: background-color .3s;
+		&:hover, &:focus {
+			color: black;
+			background-color: $mypurple;
+		}
+	}
+	@media screen and (max-width: 425px) {
+		font-size: 18px;
+	}
+	@media screen and (min-width: 1440px) {
+		font-size: 24px;
+	}
+}

@@ -1,0 +1,38 @@
+/* Footer Styles: */
+
+.footer-wrapper {
+	grid-area: footer;
+	position: relative;
+	margin: 0;
+	padding: 1.5em;
+	background-color: $grayblue;
+}
+
+.footer-border {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid $antiflashwhite;
+}
+
+.footer-title {
+	color: $antiflashwhite;
+}
+
+// ul
+.footer-list {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	padding-left: 0;
+}
+
+// li
+.footer-list__item {
+	list-style-type: none;
+	a {
+		color: $regblack;
+		border-bottom: 1px solid $regblack;
+	}
+}

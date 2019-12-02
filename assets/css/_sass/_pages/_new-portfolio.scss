@@ -1,0 +1,200 @@
+// Portfolio, New Design //
+
+// Wrapper //
+
+.portfolio-wrapper {
+
+}
+
+// Note: modal is in another file! //
+
+// Title //
+
+.portfolio__title {
+	color: black;
+}
+
+.portfolio-title__text {
+	margin: .25em auto;
+	margin-top: .5em;
+	font-size: 3rem;
+	font-family: $futura-bold;
+	text-align: center;
+	border-bottom-width: 0px;
+	@media screen and (min-width: 768px) {
+		font-size: 4rem;
+	}
+	@media screen and (min-width: 900px) {
+		margin: .25em auto;
+		font-size: 4.5rem;
+	}
+	@media screen and (min-width: 1440px) {
+		font-size: 5rem;
+	}
+}
+
+[class*="portfolio-title__line--"] {
+	height: 2px;
+	margin: calc(1.5rem - 1px) auto;
+	background-color: $mypurple;
+	@media screen and (max-width: 425px) {
+		margin: calc(1rem - 1px) auto;
+	}
+}
+
+.portfolio-title__line--left {	
+	width: calc(91.67% - 1rem);
+	margin-left: 1rem;
+	@media screen and (min-width: 900px) {
+		width: 91.67%;
+		margin-left: 2rem;
+	}
+}
+
+.portfolio-title__line--right {
+	width: calc(91.67% - 1rem);
+	margin-right: 1rem;
+	@media screen and (min-width: 900px) {
+		width: 91.67%;
+		margin-right: 2rem;
+	}
+}
+
+// Gallery //
+
+.portfolio__gallery {
+
+}
+
+// Individual entry //
+
+.portfolio-gallery__project {
+	width: 91.67%;
+	margin: 0 auto;
+}
+
+// ul
+.portfolio-proj__pics {
+	position: relative;
+	display: flex;
+	flex-flow: row wrap; // delete later
+	justify-content: space-between;
+	padding-left: 0;
+	list-style-type: none;
+	@media screen and (max-width: 599px) {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+// li > img
+.portfolio-pics__pic {
+	position: relative;
+	display: flex;
+	flex-flow: column nowrap;
+	cursor: pointer;
+}
+
+// img
+.portfolio-pics__img {
+	height: 200px;
+	width: auto;
+	margin: .25em;
+	box-shadow: 0 0 2px 0 hsla(0,0,0,.15);
+	@media screen and (max-width: 768px) {
+		margin: .25em 0;
+		height: auto;
+		width: 100%;
+	}
+	@media screen and (min-width: 1440px) {
+		height: 240px;
+	}
+}
+
+.portfolio-proj__metadata {
+	position: relative;
+	color: black;
+}
+
+.portfolio-meta__name {
+	margin: .25em 0;
+	margin-bottom: 0;
+	font-family: $futura-bold;
+	font-size: 3rem;
+	text-transform: uppercase;
+	a {
+		color: black;
+		transition: background-color .3s;
+		&:hover, &:focus {
+			color: black;
+			background-color: $mypurple;
+		}
+	}
+	@media screen and (max-width: 425px) {
+		font-size: 2rem;
+	}
+	@media screen and (min-width: 1440px) {
+		font-size: 3.5rem;
+	}
+}
+
+.portfolio-meta__sponsor, .portfolio-meta__role, .portfolio-meta__note {
+	font-family: $source-sans;
+	font-size: 1.375rem;
+	font-weight: 400;
+	margin: 2px;
+	@media screen and (max-width: 425px) {
+		font-size: 18px;
+	}
+	@media screen and (min-width: 1440px) {
+		font-size: 1.5rem;
+	}
+}
+
+.portfolio-meta__sponsor {
+	color: $medgray;
+}
+
+.portfolio-meta__role {
+	color: black;
+	max-width: 800px;
+}
+
+.portfolio-meta__note {
+	color: $mypurple;
+}
+
+.portfolio-proj__divider {
+	margin: 3rem 0;
+}
+
+[class*="portfolio-divider__line--"] {
+	height: 2px;
+	margin: calc(1.5rem - 1px) auto;
+	background-color: $mypurple;
+	@media screen and (max-width: 425px) {
+		margin: calc(1rem - 1px) auto;
+	}
+}
+
+.portfolio-divider__line--left {
+	width: calc(91.67% - 1rem);
+	margin-left: 1rem;
+	@media screen and (min-width: 900px) {
+		width: 91.67%;
+		margin-left: 2rem;
+	}
+}
+
+.portfolio-divider__line--right {
+	width: calc(91.67% - 1rem);
+	margin-right: 1rem;
+	@media screen and (min-width: 900px) {
+		width: 91.67%;
+		margin-right: 2rem;
+	}
+}
+
+.portfolio-divider__line--left {
+
+}

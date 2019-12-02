@@ -1,0 +1,122 @@
+/* New Home Styles: */
+
+// Section 0: Wrapper
+
+.home-wrapper {
+	grid-area: main;
+	position: relative;
+}
+
+.home-main-content {
+	position: relative;
+	display: grid;
+	grid-template-areas: 'name'
+						 'subhed'
+						 'info';
+	grid-template-columns: 1fr;
+	padding: 1.5rem 4.167%;
+
+}
+
+// Section 1: Name
+
+.home__name {
+	grid-area: name;
+	position: relative;
+	h1 {
+		line-height: 1;
+		margin: .25em 0;
+		padding-bottom: .0625em;
+		font-size: 2.25rem;
+		font-family: 'Oswald', sans-serif;
+		font-weight: 700;
+		text-transform: uppercase;
+		border-bottom: 2px solid $grayblue--light;
+	}
+	@media screen and (min-width: 600px) {
+		h1 {
+			font-size: 2.75rem;
+		}
+	}
+	@media screen and (min-width: 768px) {
+		h1 {
+			font-size: 3.5rem;
+		}
+	}
+}
+
+// Section 2: Subheds
+
+.home__subhed {
+	grid-area: subhed;
+	position: relative;
+	display: grid;
+	grid-template-areas: 'one'
+						 'two'
+						 'three';
+	@media screen and (min-width: 768px) {
+		grid-template-areas: 'one one one one ...'
+							 '... two two two two'
+							 'three three three three three';
+	}
+
+}
+
+// div
+[class*='home-subhed__'] {
+	h2 {
+		margin: .5rem;
+		margin-left: 0;
+		@media screen and (max-width: 600px) {
+			font-size: 1.25rem;
+		}
+	}
+}
+
+.home-subhed__one {
+	grid-area: one;
+	color: $medgray;
+}
+
+.home-subhed__two {
+	grid-area: two;
+	color: $medgray;
+}
+
+.home-subhed__three {
+	grid-area: three;
+	color: $darkgray;
+	display: none;
+}
+
+
+// Section 3: Information
+
+.home__info {
+	grid-area: info;
+
+}
+
+.home-info__hire-me {
+
+}
+
+.home-info__title {
+	h2 {
+		span {
+			color: $grayblue;
+		}
+	}
+}
+
+.home-info__list {
+
+}
+
+.home-info__portfolio {
+
+}
+
+.home-info__learn {
+
+}

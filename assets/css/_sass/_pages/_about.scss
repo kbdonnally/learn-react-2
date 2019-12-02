@@ -1,0 +1,122 @@
+/* New About Styles: */
+
+// Section 0: Wrapper
+
+.about-wrapper {
+	position: relative;
+}
+
+.about-main-content {
+	position: relative;
+	display: grid;
+	grid-template-areas: 'title'
+						 'bio'
+						 'contact'
+						 'hire';
+	grid-template-columns: 1fr;
+	padding: 1.5rem 4.167%;
+
+}
+
+// Section 1: Page title
+
+.about__big-title {
+	grid-area: title;
+	position: relative;
+	h1 {
+		line-height: 1;
+		margin: .25em 0;
+		padding-bottom: .0625em;
+		font-size: 2.25rem;
+		font-family: 'Oswald', sans-serif;
+		font-weight: 700;
+		text-transform: uppercase;
+		border-bottom: 1px solid $halfgray;
+	}
+	@media screen and (min-width: 600px) {
+		h1 {
+			font-size: 2.75rem;
+		}
+	}
+	@media screen and (min-width: 768px) {
+		h1 {
+			font-size: 3.5rem;
+		}
+	}
+}
+
+// Section 2: Bio
+
+.about__bio {
+	grid-area: bio;
+	position: relative;
+
+}
+
+.about-bio__title {
+
+}
+
+.about-bio__content {
+
+}
+
+// ul
+.about-bio__links {
+	padding-left: 0;
+	li {
+		list-style-type: none;
+	}
+}
+
+// Section 3: Contact
+
+.about__contact {
+	grid-area: contact;
+	position: relative;
+}
+
+.about-contact__title {
+
+}
+
+// ul
+.about-contact__list {
+	padding-left: 0;
+}
+
+// li
+.about-contact__item {
+	position: relative;
+	display: flex;
+	align-items: center;
+	height: 2rem;
+	margin: .5rem 0;
+	list-style-type: none;
+	img {
+		height: 2em;
+		padding-right: 2em;
+	}
+	a {
+
+	}
+}
+
+// Section 4: Hiring
+
+.about__hire {
+	grid-area: hire;
+	position: relative;
+}
+
+.about-hire__title {
+
+}
+
+// ul
+.about-hire__content {
+	padding-left: 0;
+	li {
+		list-style-type: none;
+	}
+}

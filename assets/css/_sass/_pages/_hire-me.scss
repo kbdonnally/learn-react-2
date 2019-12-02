@@ -1,0 +1,84 @@
+/* Hire Me Styles: */
+
+// wrapper
+
+.hire-me-wrapper {
+
+}
+
+// main content
+
+.hire-me-main-content {
+	padding: 1.5rem 4.167%;
+}
+
+.hire-me__big-title {
+	position: relative;
+	padding-top: 1px;
+	h1 {
+		line-height: 1;
+		margin: .25em 0;
+		padding-bottom: .0625em;
+		font-size: 2.25rem;
+		font-family: 'Oswald', sans-serif;
+		font-weight: 700;
+		text-transform: uppercase;
+		border-bottom: 1px solid $halfgray;
+	}
+	@media screen and (min-width: 600px) {
+		h1 {
+			font-size: 2.75rem;
+		}
+	}
+	@media screen and (min-width: 768px) {
+		h1 {
+			font-size: 3.5rem;
+		}
+	}
+}
+
+// 1. offerings
+
+.hire-me__main-offerings {
+
+}
+
+.hire-offerings__title {
+
+}
+
+.hire-offerings__list {
+
+}
+
+// 2. contact routes
+
+.hire-me__routes {
+
+}
+
+.hire-routes__title {
+
+}
+
+.hire-routes__route-1 {
+
+}
+
+.hire-routes__route-2 {
+
+}
+
+// 3. final note
+
+.hire-me__note {
+
+}
+
+.hire-note__title {
+
+}
+
+.hire-note__content {
+
+}

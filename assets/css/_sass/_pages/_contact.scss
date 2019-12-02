@@ -1,0 +1,88 @@
+/* Contact Styles: */
+
+// wrapper
+
+.contact-wrapper {
+
+}
+
+// main content
+
+.contact-main-content {
+	padding: 1.5rem 4.167%;
+}
+
+// 1. page title
+
+.contact__big-title {
+	position: relative;
+	h1 {
+		line-height: 1;
+		margin: .25em 0;
+		padding-bottom: .0625em;
+		font-size: 2.25rem;
+		font-family: 'Oswald', sans-serif;
+		font-weight: 700;
+		text-transform: uppercase;
+		border-bottom: 1px solid $halfgray;
+	}
+	@media screen and (min-width: 600px) {
+		h1 {
+			font-size: 2.75rem;
+		}
+	}
+	@media screen and (min-width: 768px) {
+		h1 {
+			font-size: 3.5rem;
+		}
+	}
+}
+
+// 2. contact list
+
+.contact__contact-list {
+
+}
+
+.contact-list__title {
+
+}
+
+// ul
+.contact-list__list {
+	padding-left: 0;
+}
+
+// li
+.contact-list__item {
+	position: relative;
+	display: flex;
+	align-items: center;
+	height: 2rem;
+	margin: .5rem 0;
+	list-style-type: none;
+	img {
+		height: 2em;
+		padding-right: 2em;
+	}
+	a {
+
+	}
+}
+
+// 2. hire me
+
+.contact__hire {
+
+}
+
+.contact-hire__title {
+
+}
+
+.contact-hire__content {
+	padding-left: 0;
+	li {
+		list-style-type: none;
+	}
+}

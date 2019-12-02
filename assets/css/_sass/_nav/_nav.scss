@@ -1,0 +1,41 @@
+/* Navigation Styles: */
+
+// outer wrapper
+nav.nav-wrapper {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+
+// home link
+section.nav-home-link {
+	padding: 0 1em;
+	align-self: center;
+	a {
+
+	}
+}
+
+// ul
+.nav-list-wrapper {
+	position: relative;
+	display: flex;
+	flex-flow: row wrap;
+	padding-left: 0;
+}
+
+// li
+.nav-list__item {
+	list-style-type: none;
+	padding: 0 1em;
+	a {
+		text-decoration: none;
+		font-weight: bold;
+		color: $grayblue;
+		transition: .3s color, .3s border;
+		&:hover, &:focus {
+			color: $textgray;
+			border-bottom: 1px solid $textgray;
+		}
+	}
+}
