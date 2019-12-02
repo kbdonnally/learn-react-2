@@ -2,6 +2,7 @@
 const gulp   = require('gulp');
 const concat = require('gulp-concat');
 const minify = require('gulp-minify');
+const clean  = require('gulp-clean');
 
 // ---------------------------------------------------
 
@@ -19,7 +20,7 @@ gulp.task('js', js);
 // ----------------------------------------------------
 
 const babelCompile = (done) => {
-	gulp.src('babel/*.js')
+	gulp.src('partials/*.js')
 		.pipe(babel({
 			presets: ["@babel/preset-react"]
 		}))
@@ -37,7 +38,7 @@ const babelClean = (done) => {
 gulp.task('babel:compile', babelCompile);
 
 gulp.task('babel:watch', () => {
-	return gulp.watch('babel/*.js', babelCompile)
+	return gulp.watch('partials/*.js', babelCompile)
 });
 
 gulp.task('babel:clean', babelClean);
