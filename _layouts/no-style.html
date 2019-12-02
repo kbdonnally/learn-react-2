@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body class="default">
+    {% include new-nav.html %}
+        {{ content }}
+    {% include footer.html %}
+    <script src="{{ 'assets/js/hammer.min.js' | relative_url }}"></script>
+    <script src="{{ 'assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>

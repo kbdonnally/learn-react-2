@@ -1,0 +1,11 @@
+<nav class="menu-wrapper">
+	<section class="menu__home-link"> <!-- turn into logo -->
+		<a href="{{ site.url}}" aria-label="Home page link"><img src="{{ 'assets/img/svg/logo-white.svg' | relative_url }}" alt="Initials logo"></a>
+	</section>
+	<ul class="menu__page-list">
+	{% assign pages = site.pages | where: 'menu', 'true' | sort: 'order' %}
+	{% for page in pages %}
+		<li class="menu-list__item"><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
+	{% endfor %}
+	</ul>
+</nav>

@@ -1,0 +1,19 @@
+---
+layout: new-default
+---
+
+<main class="post__metadata">
+	<a class="post-meta__back" href="{{ '/blog' | relative_url }}"><< Back to Blog</a>
+	<h1 class="post-meta__title">{{ page.title }}</h1>
+	<h4 class="post-meta__date">// Posted {{ page.date | date: "%b. %-d, %Y"}} <span><br/></span>// tags:
+		<ul class="post-meta__tags">
+			{% for cat in page.categories %}
+			<li class="post-meta__tag">{{ cat }}</li>
+			{% endfor %}
+		</ul>
+	</h4>
+</main>
+
+<article class="post__content">
+	{{ content }}
+</article>
