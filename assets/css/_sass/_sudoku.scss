@@ -33,12 +33,16 @@
 }
 
 // individual nums
-.sudoku__number {
+.sudoku__number-wrapper {
 	border: 1px solid purple;
-	align-self: center;
-	justify-self: center;
+	display: grid;
 	height: .5in;
 	width: .5in;
+}
+
+.sudoku__number {
+	align-self: center;
+	justify-self: center;
 }
 
 // ----------- Rows: ----------------
