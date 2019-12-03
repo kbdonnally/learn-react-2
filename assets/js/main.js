@@ -1,3 +1,16 @@
+/* Hello World II: */
+// Using components with Codecademy's tutorials
+if (document.getElementById('hello-world-2')) {
+  class MyComponentClass extends React.Component {
+    render() {
+      return React.createElement("h1", null, "Hello, world!");
+    }
+
+  }
+
+  ;
+  ReactDOM.render(React.createElement(MyComponentClass, null), document.getElementById('hello-world-2'));
+}
 // JSX Sandbox to get used to it
 // Tic Tac Toe Game
 // Typing it up from my notes in hopes of understanding it better
