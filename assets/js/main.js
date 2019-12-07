@@ -25,6 +25,7 @@ class Mood extends React.Component {
 }
 
 ReactDOM.render(React.createElement(Mood, null), document.getElementById('app-1'));
+/* Hello! */
 /* Hello World II: */
 // Using components with Codecademy's tutorials
 //import React from 'react';

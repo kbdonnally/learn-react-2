@@ -31,3 +31,5 @@ ReactDOM.render(
 	<Mood />,
 	document.getElementById('app-1')
 );
+
+/* Hello! */
