@@ -27,9 +27,7 @@ class Mood extends React.Component {
 	}
 }
 
-ReactDOM.render(
+/* ReactDOM.render(
 	<Mood />,
 	document.getElementById('app-1')
-);
-
-/* Hello! */
+); */
