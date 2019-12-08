@@ -25,7 +25,7 @@ const babelCompile = (done) => {
 		.pipe(babel({
 			presets: ["@babel/preset-react"]
 		}))
-		.pipe(gulp.dest('assets/js/dist'))
+		.pipe(gulp.dest('assets/js/dist'));
 	done();
 };
 
