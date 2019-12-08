@@ -12,3 +12,7 @@ permalink: /notes/
 - Gulp's tasks:
 	1. Compile each file from Babel into clean JS
 	2. Inject the result of each file into new JS file
+
+*All taken care of!*
+
+***
