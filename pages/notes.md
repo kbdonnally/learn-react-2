@@ -41,3 +41,7 @@ class ComponentName extends React.Component {
 	}
 }
 ```
+
+***
+
+Need to learn about lifecycle functions, like `componentDidMount()` and `componentDidUpdate()`
