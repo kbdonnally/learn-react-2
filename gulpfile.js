@@ -25,13 +25,12 @@ const babelCompile = (done) => {
 		.pipe(babel({
 			presets: ["@babel/preset-react"]
 		}))
-		.pipe(concat('main.js'))
-		.pipe(gulp.dest('assets/js'))
+		.pipe(gulp.dest('assets/js/dist'))
 	done();
 };
 
 const babelClean = (done) => {
-	gulp.src('assets/js/*.js', {allowEmpty: true})
+	gulp.src('assets/js/dist/*.js', {allowEmpty: true})
 		.pipe(clean());
 	done();
 };
