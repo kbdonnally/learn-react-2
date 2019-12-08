@@ -1,6 +1,6 @@
 ---
 title: Notes
-layout: react-layout
+layout: post
 permalink: /notes/
 ---
 
@@ -10,8 +10,9 @@ permalink: /notes/
 	- Right now it appears that only 1 function call to `ReactDOM` can be made at a time per page, so the first call is the only one that gets rendered
 
 - Gulp's tasks:
-	1. Compile each file from Babel into clean JS
-	2. Inject the result of each file into new JS file
+
+1. Compile each file from Babel into clean JS
+2. Inject the result of each file into new JS file
 
 *All taken care of!*
 
@@ -45,3 +46,12 @@ class ComponentName extends React.Component {
 ***
 
 Need to learn about lifecycle functions, like `componentDidMount()` and `componentDidUpdate()`
+
+***
+
+# Compilation:
+
+- Can't compile a file unless it's completely error-free
+- Can't import a module unless you're importing it *into* a module
+	- This I do not know how to do!
+
