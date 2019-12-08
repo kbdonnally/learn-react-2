@@ -16,3 +16,28 @@ permalink: /notes/
 *All taken care of!*
 
 ***
+
+Basic formula:
+
+1. Things that go in the constructor
+2. Things that go outside of the constructor
+
+```js
+class ComponentName extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state {
+			name: 'value'
+		}
+		this.handleEvent = this.handleEvent.bind(this);
+	}
+
+	myMethod() {
+		/* does stuff */
+	}
+
+	render() {
+		return /* whatever */;
+	}
+}
+```
