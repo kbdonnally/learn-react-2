@@ -1,5 +1,4 @@
-/* Goes with parent-child.html */
-class Child extends React.Component {
+export class Child extends React.Component {
   constructor(props) {
     super(props);
     this.handleChange = this.handleChange.bind(this); // bound to this instance of Child
@@ -26,30 +25,3 @@ class Child extends React.Component {
   }
 
 } // end <Child />
-
-
-class Parent extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: 'Fred'
-    };
-    this.changeName = this.changeName.bind(this); // so we're calling this inside render() later
-  }
-
-  changeName(newName) {
-    this.setState({
-      name: newName
-    });
-  }
-
-  render() {
-    return React.createElement(Child, {
-      name: this.state.name,
-      onChange: this.changeName
-    });
-  }
-
-}
-
-ReactDOM.render(React.createElement(Parent, null), document.getElementById('parent-child'));
