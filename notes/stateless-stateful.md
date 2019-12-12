@@ -29,11 +29,11 @@ handleChange(e) {
 	- Code coming from: `<select ... onChange={this.handleChange} >`
 5. When an event is detected, the parent's state updates (say, a user selects a new dropdown menu item).
 6. Stateful component class passes down its state, distinct from the ability to *change* its state, to a different stateless component. (`Parent.js`, 25)
-7. Stateless component class receives the state and displays it. (`Sibling.js`, 5-10)
+7. That stateless component class receives the state and displays it. (`Sibling.js`, 5-10)
 8. An instance of the stateful component is rendered.
 	- 1 stateless child component displays the state
-	- 1 stateless child component displays a way to change the [name, or whatever]
-	- (`Parent.js`)
+	- 1 different stateless child component displays a way to change the [name, or whatever, variable]
+	- (`Parent.js`, 23-26)
 
 ## In conclusion:
 
