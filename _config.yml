@@ -19,6 +19,7 @@ exclude:
   - assets/python
   - node_modules
   - vendor
+  - notes
 
 permalink: /:year/:month/:title/
 
