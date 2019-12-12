@@ -12,7 +12,6 @@ export class Menu extends React.Component {
 
 	render() {
 		return (
-			// no 'props' needed b/c directly declared in same class
 			<form onClick={this.handleClick}>
 				<input type="radio" name="src" value="fast" /> fast
 				<input type="radio" name="src" value="slow" /> slow
@@ -21,3 +20,4 @@ export class Menu extends React.Component {
 			</form>
 		);
 	}
+}
